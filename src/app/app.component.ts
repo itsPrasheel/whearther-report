@@ -18,7 +18,7 @@ export class AppComponent {
   }
   
   brews: Object;
-  imageLink;
+  imageLink=null;
 
   citySearch(){
     this._http.citySearch(this.inputValue).subscribe(data => {

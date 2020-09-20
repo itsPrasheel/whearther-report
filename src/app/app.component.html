@@ -1,10 +1,8 @@
-<br>
 <div class="heading">
   <h1 class="card">Wheather Report</h1>
 </div>
 
-<br>
-<br>
+
 
 <div class="main">
   <div class="input-box">
@@ -21,7 +19,7 @@
   <br>
   <br>
   
-  <div class="card card-design">
+  <div [ngClass]="(imageLink)?'card card-design':''">
     <h2 *ngIf="flag" class="card">{{brews.name}}</h2>
     <img *ngIf="flag" class="card" src={{imageLink}}>
     <h2 *ngIf="flag" class="card">{{ brews.main.temp-273 | number : 0}}&#8451;</h2>
